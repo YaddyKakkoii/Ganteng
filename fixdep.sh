@@ -1,5 +1,6 @@
 #!/bin/bash
 YDX="https://raw.githubusercontent.com/YaddyKakkoii/Ganteng/main/"
+apt install -y && apt update -y && apt upgrade -y && apt install lolcat -y && gem install lolcat
 GREENBG="\033[42;37m"
 Green="\e[92;1m"
 z="\033[96m"
@@ -79,3 +80,4 @@ type -P vim 1>/dev/null
 type -P tput 1>/dev/null
 [ "$?" -ne 0 ] && echo "Utillity 'tput' not found, installing ncurses-utils" && apt install ncurses-utils
 # ============================================================
+
