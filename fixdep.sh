@@ -1,9 +1,6 @@
 #!/bin/bash
 YDX="https://raw.githubusercontent.com/YaddyKakkoii/Ganteng/main/"
-apt update -y
-apt upgrade -y
-apt install -y bzip2 gzip wget init coreutils openssl git screen curl jq unzip
-apt install lolcat -y && gem install lolcat
+
 MYIP=$(wget -qO- icanhazip.com);
 if ! grep -q '8.8.8.8';then
     apt update -y
@@ -13,12 +10,16 @@ if ! grep -q '8.8.8.8';then
     echo "search openstacklocal" >> /etc/resolvconf/resolv.conf.d/head
     echo "nameserver $MYIP" >> /etc/resolvconf/resolv.conf.d/head
     echo "nameserver $MYIP" >> /etc/resolvconf/resolv.conf.d/head
-fi
-cat  /etc/resolvconf/resolv.conf.d/head
 systemctl start resolvconf.service 
 systemctl enable resolvconf.service 
 systemctl restart resolvconf.service
 resolvconf --enable-updates
+fi
+cat /etc/resolvconf/resolv.conf.d/head
+apt update -y
+apt upgrade -y
+apt install -y bzip2 gzip wget init coreutils openssl git screen curl jq unzip
+#apt install lolcat -y && gem install lolcat
 GREENBG="\033[42;37m"
 Green="\e[92;1m"
 z="\033[96m"
