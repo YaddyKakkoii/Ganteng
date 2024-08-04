@@ -80,4 +80,6 @@ type -P vim 1>/dev/null
 type -P tput 1>/dev/null
 [ "$?" -ne 0 ] && echo "Utillity 'tput' not found, installing ncurses-utils" && apt install ncurses-utils
 # ============================================================
-
+echo -e "© ᴊɪᴋᴀ ᴛᴇʀᴊᴀᴅɪ ᴅᴄ ᴀᴛᴀᴜ ᴅɪsᴄᴏɴᴇᴛ sᴀᴀᴛ ɪɴsᴛᴀʟᴀsɪ, ᴅᴀɴ ᴍᴀᴜ ᴍᴀsᴜᴋ ᴜɴᴛᴜᴋ ʟɪʜᴀᴛ ᴘʀᴏsᴇsɴʏᴀ. ᴊɢɴ ᴅɪ ɪɴsᴛᴀʟ ʟᴀɢɪ ᴄᴜᴋᴜᴘ ᴍᴀsᴜᴋ ᴋᴇ ᴠᴘs ᴛʀᴜs ᴋᴇᴛɪᴋ"
+echo -e "[screen -r install]"
+echo -e "© ʙᴜᴀᴛ ʙᴀʟɪᴋ ʟᴀɢɪ ᴋᴇ ɪɴsᴛᴀʟᴀɴ ᴀᴡᴀʟ"
