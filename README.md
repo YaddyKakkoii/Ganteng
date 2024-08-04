@@ -1,3 +1,15 @@
+# INSTALL TAHAP 1
+```
+apt update && apt upgrade -y && update-grub && sleep 2 && reboot
+
+```
+
+# INSTALL TAHAP 2
+
+http://t.me/Crystalllz
+
+
+
 bash-static_5.2.21-2.1_arm64.deb
 
 
