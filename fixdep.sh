@@ -19,7 +19,7 @@ cat /etc/resolvconf/resolv.conf.d/head
 apt update -y
 apt upgrade -y
 apt install -y bzip2 gzip wget init coreutils openssl git screen curl jq unzip
-#apt install lolcat -y && gem install lolcat
+apt install lolcat -y && gem install lolcat
 GREENBG="\033[42;37m"
 Green="\e[92;1m"
 z="\033[96m"
@@ -100,8 +100,6 @@ type -P tput 1>/dev/null
 [ "$?" -ne 0 ] && echo "Utillity 'tput' not found, installing ncurses-utils" && apt install ncurses-utils
 # ============================================================
 echo ""
-echo -e "© ᴊɪᴋᴀ ᴛᴇʀᴊᴀᴅɪ ᴅᴄ ᴀᴛᴀᴜ ᴅɪsᴄᴏɴᴇᴛ sᴀᴀᴛ ɪɴsᴛᴀʟᴀsɪ, ᴅᴀɴ ᴍᴀᴜ ᴍᴀsᴜᴋ ᴜɴᴛᴜᴋ ʟɪʜᴀᴛ ᴘʀᴏsᴇsɴʏᴀ. ᴊɢɴ ᴅɪ ɪɴsᴛᴀʟ ʟᴀɢɪ ᴄᴜᴋᴜᴘ ᴍᴀsᴜᴋ ᴋᴇ ᴠᴘs ᴛʀᴜs ᴋᴇᴛɪᴋ"
-echo -e "[screen -r install]"
-echo -e "© ʙᴜᴀᴛ ʙᴀʟɪᴋ ʟᴀɢɪ ᴋᴇ ɪɴsᴛᴀʟᴀɴ ᴀᴡᴀʟ"
+echo -e "jika diskonek saat proses penginstalan ketik [screen -r install] untuk kembali ke instalasi awal"
 echo ""
 sleep 3
