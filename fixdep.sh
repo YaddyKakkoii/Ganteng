@@ -1,6 +1,24 @@
 #!/bin/bash
 YDX="https://raw.githubusercontent.com/YaddyKakkoii/Ganteng/main/"
-apt install -y && apt update -y && apt upgrade -y && apt install lolcat -y && gem install lolcat
+apt update -y
+apt upgrade -y
+apt install -y bzip2 gzip wget init coreutils openssl git screen curl jq unzip
+apt install lolcat -y && gem install lolcat
+MYIP=$(wget -qO- icanhazip.com);
+if ! grep -q '8.8.8.8';then
+    apt update -y
+    apt install resolvconf -y
+    echo "nameserver 8.8.8.8" >> /etc/resolvconf/resolv.conf.d/head
+    echo "domain openstacklocal" >> /etc/resolvconf/resolv.conf.d/head
+    echo "search openstacklocal" >> /etc/resolvconf/resolv.conf.d/head
+    echo "nameserver $MYIP" >> /etc/resolvconf/resolv.conf.d/head
+    echo "nameserver $MYIP" >> /etc/resolvconf/resolv.conf.d/head
+fi
+cat  /etc/resolvconf/resolv.conf.d/head
+systemctl start resolvconf.service 
+systemctl enable resolvconf.service 
+systemctl restart resolvconf.service
+resolvconf --enable-updates
 GREENBG="\033[42;37m"
 Green="\e[92;1m"
 z="\033[96m"
@@ -80,6 +98,9 @@ type -P vim 1>/dev/null
 type -P tput 1>/dev/null
 [ "$?" -ne 0 ] && echo "Utillity 'tput' not found, installing ncurses-utils" && apt install ncurses-utils
 # ============================================================
+echo ""
 echo -e "© ᴊɪᴋᴀ ᴛᴇʀᴊᴀᴅɪ ᴅᴄ ᴀᴛᴀᴜ ᴅɪsᴄᴏɴᴇᴛ sᴀᴀᴛ ɪɴsᴛᴀʟᴀsɪ, ᴅᴀɴ ᴍᴀᴜ ᴍᴀsᴜᴋ ᴜɴᴛᴜᴋ ʟɪʜᴀᴛ ᴘʀᴏsᴇsɴʏᴀ. ᴊɢɴ ᴅɪ ɪɴsᴛᴀʟ ʟᴀɢɪ ᴄᴜᴋᴜᴘ ᴍᴀsᴜᴋ ᴋᴇ ᴠᴘs ᴛʀᴜs ᴋᴇᴛɪᴋ"
 echo -e "[screen -r install]"
 echo -e "© ʙᴜᴀᴛ ʙᴀʟɪᴋ ʟᴀɢɪ ᴋᴇ ɪɴsᴛᴀʟᴀɴ ᴀᴡᴀʟ"
+echo ""
+sleep 3
