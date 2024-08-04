@@ -19,7 +19,7 @@ cat /etc/resolvconf/resolv.conf.d/head
 apt update -y
 apt upgrade -y
 apt-get update && apt-get upgrade -y
-apt install which -y
+
 apt install lolcat -y
 gem install lolcat
 apt install vim -y
