@@ -31,8 +31,8 @@ apt install gawk -y
 apt install patchelf -y
 apt install -y bzip2 gzip wget init coreutils openssl git screen curl jq unzip
     apt install perl
-    apt install binutils
-    apt install libarchive-dev
+    apt install binutils -y
+    apt install libarchive-dev -y
     apt install acl-dev
     apt install libz-dev
     apt install git
