@@ -44,6 +44,7 @@ apt install -y bzip2 gzip wget init coreutils openssl git screen curl jq unzip
     npm install -g bash-obfuscate
 
 echo ""
+echo -e "jika diskonek saat proses penginstalan ketik [screen -r potato] untuk kembali ke instalasi awal"
 echo -e "jika diskonek saat proses penginstalan ketik [screen -r install] untuk kembali ke instalasi awal"
-echo ""
+echo ""echo ""
 sleep 3
